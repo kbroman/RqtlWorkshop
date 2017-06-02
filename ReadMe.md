@@ -39,7 +39,7 @@ the  in the upper-left and select "About this Mac".
 
 The workshop is 9-3 with a lunch break 12-1. In the morning, we'll
 cover [R/qtl](http://rqtl.org) and the foundations of QTL mapping. In
-the afternoon, we'll cover [R/qtl2](http://kbroman.org/qtl2)
+the afternoon, we'll cover [R/qtl2](http://kbroman.org/qtl2).
 
 ---
 
