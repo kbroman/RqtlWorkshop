@@ -37,9 +37,15 @@ the  in the upper-left and select "About this Mac".
 
 ### Schedule
 
-The workshop is 9-3 with a lunch break 12-1. In the morning, we'll
-cover [R/qtl](http://rqtl.org) and the foundations of QTL mapping. In
-the afternoon, we'll cover [R/qtl2](http://kbroman.org/qtl2).
+The workshop will take place on Tuesday, 13 June, 9am-3pm, in Room 227
+of the FedEx Institute. In the morning, we'll cover
+[R/qtl](http://rqtl.org) and the foundations of QTL mapping. In the
+afternoon, we'll cover [R/qtl2](http://kbroman.org/qtl2).
+
+- 8:00-9:00  Light breakfast, 2nd floor FedEx Institute
+- 9:00-noon  R/qtl
+- noon-1:00  Light lunch, 2nd floor FedEx Institute
+- 1:00-3:00  R/qtl2
 
 ---
 
