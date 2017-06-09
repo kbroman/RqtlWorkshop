@@ -52,10 +52,12 @@ afternoon, we'll cover [R/qtl2](http://kbroman.org/qtl2).
 We'll switch back-and-forth between slides and follow-along software
 demonstration.
 
-- Source for the slides in [`Slides/`](Slides/)
-- Slide PDF will be posted when it's ready
+- Source for the slides for the R/qtl part in [`Slides_Rqtl/`](Slides_Rqtl/)
+  (PDF will be posted when ready)
 - In demonstrating R/qtl, we'll follow the
   [Shorter tour of R/qtl](http://rqtl.org/tutorials/rqtltour2.pdf)
+- Source for the slides for the R/qtl2 part will be in [`Slides_Rqtl2/`](Slides_Rqtl2/)
+  (and again, PDF will be posted when ready)
 - In demonstrating R/qtl2, we'll follow the
   [User guide](http://kbroman.org/qtl2/assets/vignettes/user_guide.html)
 
