@@ -56,7 +56,7 @@ demonstration.
 - Slide PDF will be posted when it's ready
 - In demonstrating R/qtl, we'll follow the
   [Shorter tour of R/qtl](http://rqtl.org/tutorials/rqtltour2.pdf)
-- In demonstration R/qtl2, we'll follow the
+- In demonstrating R/qtl2, we'll follow the
   [User guide](http://kbroman.org/qtl2/assets/vignettes/user_guide.html)
 
 ---
