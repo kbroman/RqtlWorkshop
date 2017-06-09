@@ -3,7 +3,6 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[dvips]{graphicx}
-%\usepackage{lscape}
 \usepackage{eepic}
 \usepackage{color}
 \usepackage{wasysym} % \female \male
@@ -38,13 +37,6 @@
 \definecolor{mypink}{rgb}{1,0.4,1}
 \definecolor{mywhite}{rgb}{1,1,1}
 
-% following: B/W
-%\definecolor{mybgcolor}{rgb}{1,1,1}
-%\definecolor{myyellow}{rgb}{0,0,0}
-%\definecolor{myblue}{rgb}{0,0,0}
-%\definecolor{mypink}{rgb}{0,0,0}
-%\definecolor{mywhite}{rgb}{0,0,0}
-
 % header/footer layout
 \pagestyle{fancy}
 \lhead{} \chead{} \rhead{}
@@ -66,9 +58,6 @@
 \newcommand{\rss}{\text{RSS}}
 \newcommand{\var}{\text{var}}
 \newcommand{\M}{\text{M}}
-%\renewcommand{\log}{\text{log}}
-%\renewcommand{\max}{\text{max}}
-
 
 
 \pagecolor{mybgcolor}
@@ -87,7 +76,6 @@ R/qtl Workshop
 
 \color{mypink}
 \rule{10in}{1mm}
-%\vspace{-10mm}
 
 \vspace{5mm}
 
@@ -1298,9 +1286,7 @@ Parallelization \\
 \hline
 HK & ++ & + & + & -- & ++ \\
 EM & + & $-$ & $-$ & + & $-$ \\
-%% Extended HK & ++ & $-$ & + & + & $-$ \\
 Imputation & $-$ & + & + & + & + \\
-%Extended Haley-Knott & + & - & ++ & ++ \\
 \hline
 \end{tabular}
 \end{center}
@@ -2094,33 +2080,6 @@ Chr 1: $\mathsf{\lod_i}$ and $\mathsf{\lod_{av1}}$
 \centerline{\includegraphics{FigsB/2dscan_chr1.pdf}}
 
 
-%\newpage
-%
-%\headsize \color{myyellow}
-%\hfill \begin{minipage}{5.75in}
-%\centering
-%Summaries
-%\end{minipage}
-%
-%\vspace{15mm}
-%
-%\color{mywhite} \smallestsize
-%
-%
-%\setlength{\tabcolsep}{0.15in}
-%\renewcommand{\arraystretch}{1.5}
-%\begin{center} \begin{tabular}{cccccccccccc} \\ \hline
-%  chr      & \hspace{5mm} & \multicolumn{2}{c}{positions} & $\mathsf{\lod_f}$
-%& $\mathsf{\lod_{fv1}}$ & $\mathsf{\lod_i}$ &
-%\hspace{5mm} &  \multicolumn{2}{c}{positions} & $\mathsf{\lod_a}$
-%& $\mathsf{\lod_{av1}}$ \\ \hline
-%1 $\times$ 4 & & 68 & 30 &  14.04  &  \color{myhotpink} 6.43 &  0.295  &  &  68 & 30 &
-%13.74 &  \color{myhotpink} 6.14 \\
-%6 $\times$ 15 && 62 & 18 &   7.89  &  \color{myhotpink} 5.96 & \color{myhotpink} 3.960  &  &  25 & 20 &
-%3.93 &   2.00 \\ \hline
-%\end{tabular} \end{center}
-
-
 
 \newpage
 
@@ -2260,18 +2219,6 @@ the same time.
 
 \item {\color{myyellow} Identify as many correct terms as possible, while
 {\color{mypink} controlling the rate of inclusion of extraneous terms}.}
-
-%\item You {\color{mypink} can't know} the performance of your procedure with your
-%data---you need to know the truth.
-%
-%\item You {\color{myyellow} can know}:
-%
-%\smallestsize
-%\begin{quote} \begin{itemize}
-%\setlength{\rightskip}{0pt plus 1fil} % makes ragged right
-%\item How a particular procedure performs in simulated cases
-%\item How a procedure performs in simulated data close to what you've inferred
-%\end{itemize} \end{quote}
 
 
 \end{itemize}
@@ -3041,28 +2988,6 @@ Add a pair of QTL?
 
 
 
-
-
-%\newpage
-%
-%\headsize \color{myyellow}
-%\hfill \begin{minipage}{5.75in}
-%\centering
-%To do
-%\end{minipage}
-%
-%\vspace{3cm} \color{mywhite} \smallersize
-%
-%\hfill \begin{minipage}{10in}
-%
-%\begin{itemize}
-%\itemsep18pt
-%\item Improve search procedures
-%\item Measuring model uncertainty
-%\item Measuring uncertainty in QTL location
-%\end{itemize}
-%
-%\end{minipage}
 
 
 
