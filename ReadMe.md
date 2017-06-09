@@ -53,11 +53,11 @@ We'll switch back-and-forth between slides and follow-along software
 demonstration.
 
 - Source for the slides for the R/qtl part in [`Slides_Rqtl/`](Slides_Rqtl/)
-  ([PDF: `Slides_Rqtl/rqtl_workshop.pdf`](Slides_Rqtl/rqtl_workshop.pdf))
+  (PDF: [`Slides_Rqtl/rqtl_workshop.pdf`](Slides_Rqtl/rqtl_workshop.pdf))
 - In demonstrating R/qtl, we'll follow the
   [Shorter tour of R/qtl](http://rqtl.org/tutorials/rqtltour2.pdf)
 - Source for the slides for the R/qtl2 part will be in [`Slides_Rqtl2/`](Slides_Rqtl2/)
-  ([PDF: `Slides_Rqtl2/rqtl2_workshop.pdf`](Slides_Rqtl2/rqtl2_workshop.pdf))
+  (PDF: [`Slides_Rqtl2/rqtl2_workshop.pdf`](Slides_Rqtl2/rqtl2_workshop.pdf))
 - In demonstrating R/qtl2, we'll follow the
   [User guide](http://kbroman.org/qtl2/assets/vignettes/user_guide.html)
 
