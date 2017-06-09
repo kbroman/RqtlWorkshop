@@ -1321,107 +1321,6 @@ Data diagnostics
 \centerline{\color{myblue} See Ch 3 in the R/qtl book,
   \href{http://rqtl.org/book}{\tt rqtl.org/book}}
 
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Example
-\end{minipage}
-
-\vspace{30mm}
-
-\hfill
-\begin{minipage}{10in}
-\smallersize \color{mywhite}
-Sugiyama et al. Genomics 71:70-77, 2001
-
-\vspace{16pt}
-
-\smallestsize
-\color{myblue}
-250 male mice from the backcross (A $\times$ B) $\times$ B
-
-Blood pressure after two weeks drinking water with 1\% NaCl
-\end{minipage}
-
-\vspace{15mm}
-
-
-\centerline{\includegraphics{FigsB/pheno.pdf}}
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Genetic map
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{FigsB/geneticmap.pdf}}
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Genotype data
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{FigsB/genodata.pdf}}
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Goals
-\end{minipage}
-
-\vspace{3cm}
-
-\color{mywhite} \smallsize
-
-\hfill \begin{minipage}[t]{9.5in}
-\begin{itemize}
-\itemsep24pt
-\item Identify quantitative trait loci (QTL) \\[6pt]
-   {\color{myblue}   (and interactions among QTL)}
-\item Interval estimates of QTL location
-\item Estimated QTL effects
-\end{itemize} \end{minipage}
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-LOD curves
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{FigsB/alod2.pdf}}
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Estimated effects
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{FigsB/meffects.pdf}}
 
 \newpage
 
@@ -1574,30 +1473,6 @@ LOD scores:
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
 \centering
-Results: $\mathsf{\lod_i}$ and $\mathsf{\lod_f}$
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{FigsB/2dscan_allchr.pdf}}
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Results: $\mathsf{\lod_i}$ and $\mathsf{\lod_f}$
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{FigsB/2dscan_selchr.pdf}}
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
 Summaries
 \end{minipage}
 
@@ -1627,115 +1502,23 @@ and let {\color{myblue} $\mathsf{c(s)}$} denote the chromosome for
 \end{minipage}
 \end{minipage}
 
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Results: $\mathsf{\lod_i}$ and $\mathsf{\lod_{fv1}}$
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{FigsB/2dscan_selchr_fv1.pdf}}
-
-
 
 \newpage
 
 \headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Thresholds
-\end{minipage}
+$\boldsymbol{\rightarrow}$ R
 
-\vspace{20mm}
+\vspace{3cm}
 
-\color{mywhite} \smallersize
+\color{mywhite} \smallsize
 
 \hfill \begin{minipage}[t]{9.5in}
-A pair of chromosomes {\color{myblue} $\mathsf{(j,k)}$} is considered interesting if:
+\begin{itemize}
+\itemsep24pt
+\item \verb|scantwo()|
+\item \verb|iplotScantwo()| in \href{http://kbroman.org/qtlcharts}{R/qtlcharts}
+\end{itemize} \end{minipage}
 
-\vspace{25mm}
-
-{\color{myblue}
-\centerline{$ \mathsf{\M_f(j,k)} > \mathsf{ T_f }$ \hspace{5mm} {\color{mypink} and }
-\hspace{5mm}
-{\color{mypink} \{} $ \mathsf{\M_{fv1}(j,k)} > \mathsf{ T_{fv1} }$
-{\color{mypink} or }
-$ \mathsf{\M_i(j,k)} > \mathsf{ T_i }$  {\color{mypink} \}}}
-
-\vspace{36pt}
-
-\centerline{\color{mypink} or }
-
-\vspace{36pt}
-
-\centerline{$ \mathsf{\M_a(j,k)} > \mathsf{ T_a }$ \hspace{5mm} {\color{mypink} and }
-\hspace{5mm}
-$ \mathsf{\M_{av1}(j,k)} > \mathsf{ T_{av1} }$ }
-}
-
-
-\vspace{25mm}
-
-where the thresholds {\color{myblue} $\mathsf{(T_f, T_{fv1}, T_i, T_a,
-    T_{av1})}$} are determined by a permutation test with a 2d scan
-
-\end{minipage} \hspace{0.5in}
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-2d scan summary
-\end{minipage}
-
-\vspace{40mm}
-
-\color{mywhite} \smallersize
-
-\begin{verbatim}
-                   pos1f pos2f lod.full lod.fv1 lod.int
-            c1:c4   71.3  30.0    14.36    6.78    0.27
-            c6:c15  55.0  20.5     6.91    4.95    2.92
-            c1:c1   39.3  78.3     5.10    1.58    0.09
-
-
-                   pos1a pos2a  lod.add lod.av1
-            c1:c4   68.3  30.0    14.09    6.50
-            c6:c15  24.0  22.5     3.99    2.03
-            c1:c1   48.3  79.3     5.02    1.50
-\end{verbatim}
-
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Estimated effects
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{FigsB/ieffects.pdf}}
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Chr 1: $\mathsf{\lod_i}$ and $\mathsf{\lod_{av1}}$
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{FigsB/2dscan_chr1.pdf}}
 
 
 
@@ -1959,45 +1742,22 @@ Exploratory methods
 
 
 
-
-
 \newpage
 
 \headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Controlling for chr 4
-\end{minipage}
+$\boldsymbol{\rightarrow}$ R
 
-\vfill
+\vspace{3cm}
 
-\centerline{\includegraphics{FigsB/alod_c4.pdf}}
+\color{mywhite} \smallsize
 
+\hfill \begin{minipage}[t]{9.5in}
+\begin{itemize}
+\itemsep24pt
+\item \verb|scanone()| with marker as additive covariate
+\item \verb|makeqtl()|, \verb|fitqtl()|, \verb|addqtl()|, \verb|refineqtl()|
+\end{itemize} \end{minipage}
 
-
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Drop-one-QTL table
-\end{minipage}
-
-
-\vspace{40mm}
-
-\color{mywhite} \smallersize
-
-\begin{verbatim}
-                                  df    LOD   %var
-                1@68.3             1   6.30   11.0
-                4@30.0             1  12.21   20.1
-                6@61.0             2   7.93   13.6
-                15@17.5            2   7.14   12.3
-                6@61.0 : 15@17.5   1   5.68    9.9
-\end{verbatim}
 
 
 
@@ -2035,29 +1795,17 @@ Automation
 Additive QTL
 \end{minipage}
 
-\vspace{2cm} \color{mywhite} \smallersize
+\vspace{6cm}
 
+\color{mywhite} \smallersize
 \hfill \begin{minipage}{10in}
-
-Simple situation:
-
-{\smallestsize
-\color{myblue}
-\begin{itemize}
-\item Dense markers
-\item Complete genotype data
-\item No epistasis
-
-\end{itemize} }
-
-\vspace{2cm}
 
 \centerline{
 $\mathsf{y  = \mu + \sum \beta_j \, q_j + \epsilon}$ \hspace{1cm}
        {\color{mypink} which $\mathsf{\beta_j \ne 0}$?}
 }
 
-\vspace{2cm}
+\vspace{3cm}
 
 {\color{myyellow}
 $\mathsf{ \plod(\gamma) = \lod(\gamma) -
@@ -2065,15 +1813,10 @@ $\mathsf{ \plod(\gamma) = \lod(\gamma) -
 }
 
 
-
-
 \end{minipage}
-
-
 
 \newpage
 
-\addtocounter{page}{-1}
 
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
@@ -2081,43 +1824,34 @@ $\mathsf{ \plod(\gamma) = \lod(\gamma) -
 Additive QTL
 \end{minipage}
 
-\vspace{2cm} \color{mywhite} \smallersize
+\vspace{6cm}
 
+\color{mywhite} \smallersize
 \hfill \begin{minipage}{10in}
-
-Simple situation:
-
-{\smallestsize
-\color{myblue}
-\begin{itemize}
-\item Dense markers
-\item Complete genotype data
-\item No epistasis
-
-\end{itemize} }
-
-\vspace{2cm}
 
 \centerline{
 $\mathsf{y  = \mu + \sum \beta_j \, q_j + \epsilon}$ \hspace{1cm}
        {\color{mypink} which $\mathsf{\beta_j \ne 0}$?}
 }
 
-\vspace{2cm}
+\vspace{3cm}
 
 {\color{myyellow}
 $\mathsf{ \plod(\gamma) = \lod(\gamma) -
     {\color{mypink} T} \, |\gamma| }$
 }
 
+
+\end{minipage}
+
 \vspace{2cm}
 
-\begin{minipage}[t]{1.4in}
+\hfill \begin{minipage}[t]{1.4in}
 \vspace*{0mm}
 
 0 vs 1 QTL:
 \end{minipage}
-\begin{minipage}[t]{6in}
+\begin{minipage}[t]{8.6in}
 \vspace*{0mm}
 
 \color{myblue}
@@ -2126,14 +1860,8 @@ $\mathsf{\plod(\{\lambda\}) =
     \lod(\lambda) - {\color{mypink} T}}$
 \end{minipage}
 
-
-\end{minipage}
-
-
-
 \newpage
 
-\addtocounter{page}{-1}
 
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
@@ -2141,539 +1869,55 @@ $\mathsf{\plod(\{\lambda\}) =
 Additive QTL
 \end{minipage}
 
-\vspace{2cm} \color{mywhite} \smallersize
+\vspace{6cm}
+
+\color{mywhite} \smallersize
 
 \hfill \begin{minipage}{10in}
-
-Simple situation:
-
-{\smallestsize
-\color{myblue}
-\begin{itemize}
-\item Dense markers
-\item Complete genotype data
-\item No epistasis
-
-\end{itemize} }
-
-\vspace{2cm}
 
 \centerline{
 $\mathsf{y  = \mu + \sum \beta_j \, q_j + \epsilon}$ \hspace{1cm}
        {\color{mypink} which $\mathsf{\beta_j \ne 0}$?}
 }
 
-\vspace{2cm}
+\vspace{3cm}
 
 {\color{myyellow}
 $\mathsf{ \plod(\gamma) = \lod(\gamma) -
     {\color{mypink} T} \, |\gamma| }$
 }
 
+
+\end{minipage}
+
 \vspace{2cm}
 
-\begin{minipage}[t]{10in}
+\hfill \begin{minipage}[t]{10in}
 \vspace*{0mm}
+
 
 For the mouse genome: \\[6pt]
 \hspace*{0.5in} $\mathsf{\color{mypink} T}$ = {\color{myblue}
   2.69} (BC) or {\color{myblue} 3.52} (F$_{\mathsf{2}}$)
 \end{minipage}
 
-\end{minipage}
-
-
 
 
 \newpage
 
 \headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Experience
-\end{minipage}
-
-\vspace{3cm} \color{mywhite} \smallersize
-
-\hfill \begin{minipage}{10in}
-
-\begin{itemize}
-\itemsep18pt
-\item Controls rate of inclusion of extraneous terms
-\item Forward selection over-selects
-\item {\color{myblue} Forward selection followed by backward elimination} works as well
-  as {\color{myblue} MCMC}
-
-\item {\color{mypink} Need to define performance criteria}
-\item {\color{mypink} Need large-scale simulations}
-\end{itemize}
-
-\vspace{6cm}
-
-\smallestsize \color{myblue}
-\hfill Broman \& Speed, JRSS B 64:641-656, 2002
-
-\end{minipage}
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Epistasis
-\end{minipage}
-
-\vspace{3cm} \color{mywhite} \smallersize
-
-\hfill \begin{minipage}{10in}
-
-\centerline{
-$\mathsf{y  = \mu + \sum \beta_j \, q_j + \sum \gamma_{jk} \, q_j \,
-    q_k + \epsilon}$
-}
+$\boldsymbol{\rightarrow}$ R
 
 \vspace{3cm}
 
-{\color{myyellow}
-$\mathsf{ \plod(\gamma) = \lod(\gamma) -
-    {\color{mypink} T_m} \, |\gamma|_m - {\color{mypink} T_i} \, |\gamma|_i }$
-}
+\color{mywhite} \smallsize
 
-
-\vspace{15mm}
-
-\hspace{3cm} $\mathsf{\color{mypink} T_m}$ = as chosen previously
-
-\vspace{15mm}
-
-\hspace{3cm} $\mathsf{\color{mypink} T_i}$ = ?
-
-
-
-\end{minipage}
-
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Idea 1
-\end{minipage}
-
-\vspace{3cm} \color{mywhite} \smallersize
-
-\hfill \begin{minipage}{10in}
-
-Imagine there are two additive QTL and consider a 2d, 2-QTL scan.
-
-\vspace{1cm}
-
-\hspace*{0.5in} $\mathsf{\color{mypink} T_i}$ = 95th percentile of the
-  distribution of \\[6pt]
-\hspace*{1.3in} {\color{myblue} $\mathsf{ \text{max} \, \lod_f(s,t) -
-    \text{max} \, \lod_a(s,t)}$}
-
-
-\end{minipage}
-
-
-
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Idea 1
-\end{minipage}
-
-\vspace{3cm} \color{mywhite} \smallersize
-
-\hfill \begin{minipage}{10in}
-
-Imagine there are two additive QTL and consider a 2d, 2-QTL scan.
-
-\vspace{1cm}
-
-\hspace*{0.5in} $\mathsf{\color{mypink} T_i}$ = 95th percentile of the
-  distribution of \\[6pt]
-\hspace*{1.3in} {\color{myblue} $\mathsf{ \text{max} \, \lod_f(s,t) -
-    \text{max} \, \lod_a(s,t)}$}
-
-
-\vspace{2cm}
-
-For the mouse genome: \\[12pt]
-\hspace*{0.5in} $\mathsf{\color{mypink} T_m}$ = {\color{myblue}
-  2.69} (BC) or {\color{myblue} 3.52} (F$_{\mathsf{2}}$) \\[12pt]
-\hspace*{0.5in} $\mathsf{\color{mypink} T^H_i}$ = {\color{myblue}
-  2.62} (BC) or {\color{myblue} 4.28} (F$_{\mathsf{2}}$)
-
-
-\end{minipage}
-
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Idea 2
-\end{minipage}
-
-\vspace{3cm} \color{mywhite} \smallersize
-
-\hfill \begin{minipage}{10in}
-
-Imagine there is one QTL and consider a 2d, 2-QTL scan.
-
-\vspace{1cm}
-
-\hspace*{0.5in} $\mathsf{\color{mypink} T_m + T_i}$ = 95th percentile of the
-  distribution of \\[6pt]
-\hspace*{2.0in} {\color{myblue} $\mathsf{ \text{max} \, \lod_f(s,t) -
-    \text{max} \, \lod_1(s)}$}
-
-
-\end{minipage}
-
-
-
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Idea 2
-\end{minipage}
-
-\vspace{3cm} \color{mywhite} \smallersize
-
-\hfill \begin{minipage}{10in}
-
-Imagine there is one QTL and consider a 2d, 2-QTL scan.
-
-\vspace{1cm}
-
-\hspace*{0.5in} $\mathsf{\color{mypink} T_m + T_i}$ = 95th percentile of the
-  distribution of \\[6pt]
-\hspace*{2.0in} {\color{myblue} $\mathsf{ \text{max} \, \lod_f(s,t) -
-    \text{max} \, \lod_1(s)}$}
-
-
-\vspace{2cm}
-
-For the mouse genome: \\[12pt]
-\hspace*{0.5in} $\mathsf{\color{mypink} T_m}$ = {\color{myblue}
-  2.69} (BC) or {\color{myblue} 3.52} (F$_{\mathsf{2}}$) \\[12pt]
-\hspace*{0.5in} $\mathsf{\color{mypink} T^H_i}$ = {\color{myblue}
-  2.62} (BC) or {\color{myblue} 4.28} (F$_{\mathsf{2}}$) \\[12pt]
-\hspace*{0.5in} $\mathsf{\color{mypink} T^L_i}$ = {\color{myblue}
-  1.19} (BC) or {\color{myblue} 2.69} (F$_{\mathsf{2}}$)
-
-
-\end{minipage}
-
-
-
-
-
-
-
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Models as graphs
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{FigsB/models.pdf}}
-
-
-
-
-
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Results
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models1.pdf}}
-
-
-
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Results
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models2.pdf}}
-
-
-
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Results
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models3.pdf}}
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Profile LOD curves
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/lod_profile.pdf}}
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Drop-one-QTL table
-\end{minipage}
-
-
-\vspace{40mm}
-
-\color{mywhite} \smallersize
-
-\begin{verbatim}
-                                  df    LOD   %var
-                1@68.3             1   6.30   11.0
-                4@30.0             1  12.21   20.1
-                6@61.0             2   7.93   13.6
-                15@17.5            2   7.14   12.3
-                6@61.0 : 15@17.5   1   5.68    9.9
-\end{verbatim}
-
-\newpage
-
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Add an interaction?
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models4.pdf}}
-
-
-
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Add an interaction?
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models5.pdf}}
-
-
-
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Add an interaction?
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models6.pdf}}
-
-
-
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Add an interaction?
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models7.pdf}}
-
-
-
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Add an interaction?
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models8.pdf}}
-
-
-
-
-\newpage
-
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Add another QTL?
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models9.pdf}}
-
-
-
-\newpage
-
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Add another QTL?
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models10.pdf}}
-
-
-
-\newpage
-
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Add another QTL?
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models11.pdf}}
-
-
-
-\newpage
-
-
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Add a pair of QTL?
-\end{minipage}
-
-\vfill
-
-
-\centerline{\includegraphics{FigsB/hyper_models12.pdf}}
-
-
-
-
-
-
-
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Summary
-\end{minipage}
-
-\vspace{3cm} \color{mywhite} \smallersize
-
-\hfill \begin{minipage}{9.5in}
-
+\hfill \begin{minipage}[t]{9.5in}
 \begin{itemize}
 \itemsep24pt
-\item QTL mapping is a model selection problem
-\item The criterion for comparing models is most important
-\item We're focusing on a penalized likelihood method, with penalties
-  derived from permutation tests with 1d and 2d scans
-\item Manichaikul et al., Genetics 181:1077--1086, 2009
-\end{itemize}
-
-\end{minipage} \hspace{0.5in}
-
+\item \verb|stepwiseqtl()|
+\item \verb|plotLodProfile()|
+\end{itemize} \end{minipage}
 
 
 
@@ -2778,5 +2022,37 @@ References
 \end{itemize}
 \end{minipage}
 
+
+\newpage
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+References
+\end{minipage}
+
+\vspace*{15mm}
+
+\color{mywhite} \smallestsize
+
+\hspace*{0.5in}
+\begin{minipage}{9.5in}
+\begin{itemize}
+\itemsep8pt
+\item Broman KW, Speed TP (2002) A model selection approach for the
+  identification of quantitative trait loci in experimental crosses. J
+  Roy Stat Soc B 64:641--656
+
+{\color{myblue} Multiple-QTL model selection with additive QTL.}
+
+\item Manichaikul A, Moon JY, Sen \'S, Yandell BS, Broman KW (2009) A
+  model selection approach for the identification of quantitative
+  trait loci in experimental crosses, allowing epistasis. Genetics
+  181:1077--1086
+
+{\color{myblue} Also account for epistasis.}
+
+\end{itemize}
+\end{minipage}
 
 \end{document}
