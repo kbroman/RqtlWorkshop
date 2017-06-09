@@ -995,6 +995,22 @@ tests, generally performs just fine anyway.
 
 
 
+\newpage
+
+\headsize \color{myyellow}
+$\boldsymbol{\rightarrow}$ R
+
+\vspace{3cm}
+
+\color{mywhite} \smallsize
+
+\hfill \begin{minipage}[t]{9.5in}
+\begin{itemize}
+\itemsep24pt
+\item \verb|nqrank()|
+\item \verb|scanone()| with \verb|model="binary"| or \verb|model="np"|
+\end{itemize} \end{minipage}
+
 
 
 \newpage
@@ -1185,6 +1201,22 @@ Split on sex?
 \end{minipage}
 
 
+\newpage
+
+\headsize \color{myyellow}
+$\boldsymbol{\rightarrow}$ R
+
+\vspace{3cm}
+
+\color{mywhite} \smallsize
+
+\hfill \begin{minipage}[t]{9.5in}
+\begin{itemize}
+\itemsep24pt
+\item \verb|scanone()| with \verb|addcovar| and \verb|intcovar|
+\item \verb|set.seed()| to do permutations
+\item \verb|subset()| to split on sex
+\end{itemize} \end{minipage}
 
 
 \newpage
@@ -1211,8 +1243,6 @@ X chr in intercross
 \vfill
 
 \centerline{\includegraphics[]{FigsA/xchr_f2.pdf}}
-
-
 
 
 \newpage
@@ -1244,101 +1274,21 @@ Intercross: both dir, both sexes
 \end{minipage}
 
 
-
-
 \newpage
 
 \headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Principles
-\end{minipage}
-
+$\boldsymbol{\rightarrow}$ R
 
 \vspace{3cm}
 
 \color{mywhite} \smallsize
 
-\hspace{0.5in} \begin{minipage}[t]{9.5in}
+\hfill \begin{minipage}[t]{9.5in}
 \begin{itemize}
 \itemsep24pt
-\item Sex- or cross-direction-difference in the phenotype shouldn't
-  lead to spurious linkage on the X chromosome
-\item Simple as possible
-\item Null nested within alternative
+\item \verb|scanone()| permutations with \verb|perm.Xsp=TRUE|
 \end{itemize} \end{minipage}
 
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Approach
-\end{minipage}
-
-\smallersize \color{mywhite}
-\vspace{2cm}
-
-\begin{center}
-\setlength{\tabcolsep}{12pt}
-\renewcommand{\arraystretch}{1.5}
-\noindent \begin{tabular}{cccccc} \hline
-{\color{myblue} Cross} & {\color{myblue} Direction} & {\color{myblue} Sexes} & {\color{myblue} Contrasts} & {\color{myblue} H$_{\text{0}}$} & {\color{myblue} df} \\ \hline
-BC & & both& AA:AB:AY:BY & $\female$:$\male$ & 2
-  \\
-BC & & $\female$ & AA:AB & grand mean & 1 \\
-BC & & $\male$ & AY:BY & grand mean & 1 \\ \hline
-F$_{\text{2}}$ & both & both & AA:ABf:ABr:BB:AY:BY & $\female_{f}$:$\female_{r}$:$\male$ & 3 \\
-F$_{\text{2}}$ & both & $\female$ & AA:ABf:ABr:BB & $\female_{f}$:$\female_{r}$ & 2
-  \\
-F$_{\text{2}}$ & both & $\male$ & AY:BY & grand mean & 1 \\
-F$_{\text{2}}$ & one  & both & AA:AB:AY:BY & $\female$:$\male$ & 2 \\
-F$_{\text{2}}$ & one  & $\female$ & AA:AB & grand mean & 1 \\
-F$_{\text{2}}$ & one  & $\male$ & AY:BY & grand mean & 1 \\
-\hline
-\end{tabular} \end{center}
-
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Chromosome-specific thresholds
-\end{minipage}
-
-\vspace{2cm}
-
-\color{mywhite} \smallsize
-
-\hspace{0.5in} \begin{minipage}[t]{9.5in}
-Let {\color{myblue} $\alpha_i$} = false positive rate for chromosome $i$.
-
-\bigskip
-
-We need {\color{myblue} $1 - \alpha = \prod (1 - \alpha_i)$}
-
-\bigskip \bigskip \bigskip
-
-For example,  {\color{myblue} $\alpha_1 = \alpha$ {\color{mywhite} and} $\alpha_j = 0$
-  for $j \ne 1$}
-
-\bigskip \bigskip \bigskip
-
-The usual method: {\color{mypink} constant LOD threshold} \\
-\hspace*{3in} {\color{myblue} (i.e., constant power)}
-
-\bigskip \bigskip \bigskip
-
-{\color{myyellow} My approach: \hspace{1cm} $\alpha_i \propto L_i$}
-\hspace{1cm} where $L_i$ = length of chr $i$
-
-\bigskip \bigskip
-
-\hspace*{1.5in} {\color{myblue} Similar and more convenient:  $\alpha_i = (1-\alpha)^{L_i/L}$}
-\end{minipage}
 
 
 
@@ -1366,7 +1316,10 @@ Data diagnostics
 \item Look at counts of crossovers
 \end{itemize} \end{minipage}
 
+\vspace{15mm}
 
+\centerline{\color{myblue} See Ch 3 in the R/qtl book,
+  \href{http://rqtl.org/book}{\tt rqtl.org/book}}
 
 \newpage
 
