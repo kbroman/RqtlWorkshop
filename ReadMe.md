@@ -43,9 +43,9 @@ of the FedEx Institute. In the morning, we'll cover
 afternoon, we'll cover [R/qtl2](http://kbroman.org/qtl2).
 
 - 8:00-9:00  Light breakfast, 2nd floor FedEx Institute
-- 9:00-noon  R/qtl
+- 9:00-noon  R/qtl (_break 10:20 - 10:40_)
 - noon-1:00  Light lunch, 2nd floor FedEx Institute
-- 1:00-3:00  R/qtl2
+- 1:00-3:00  R/qtl2 (_break 1:50 - 2:10_)
 
 ### Course materials
 
