@@ -131,8 +131,6 @@ Why R/qtl2?
 
 \newpage
 
-\newpage
-
 \headsize \color{myyellow}
 \hfill\begin{minipage}{5.75in}
 \centering
@@ -173,5 +171,47 @@ R/qtl $\rightarrow$ R/qtl2
 
 
 \newpage
+
+\headsize \color{myyellow}
+$\boldsymbol{\rightarrow}$ R
+
+\vspace{3cm}
+
+\color{mywhite} \smallsize
+
+\hfill \begin{minipage}[t]{9.5in}
+\begin{itemize}
+\itemsep24pt
+\item \verb|convert2cross2()|
+\item \verb|summary()|, \verb|n_ind()|, \verb|n_mar()|, \dots
+\item \verb|insert_pseudomarkers()|
+\item \verb|calc_genoprob()|
+\item \verb|scan1()|
+\item \verb|find_peaks()|
+\end{itemize} \end{minipage}
+
+
+\newpage
+
+\headsize \color{myyellow}
+\hfill\begin{minipage}{5.75in}
+\centering
+Linear mixed models
+\end{minipage}
+
+
+\vspace{3cm}
+
+\color{mywhite} \textsize
+
+$$\begin{array}{lllcl@{\qquad}l}
+  y_i & = & \mu + & \textstyle{{\color{mypink} \sum_k \beta_k q_{ik}}} & + \epsilon_i
+               & \epsilon_i \sim \text{N}(0, \sigma^2_e) \\[24pt]
+  & = & \mu + & {\color{mypink} \eta_i} & + \epsilon_i & \eta_i \sim \text{N}(0, \sigma^2_p)
+\end{array}$$
+
+\vspace{2cm}
+
+$$\text{cov}(\eta_i, \eta_j) = \sigma^2_p \; (2 k_{ij})$$
 
 \end{document}
