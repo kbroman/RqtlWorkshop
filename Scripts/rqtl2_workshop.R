@@ -138,3 +138,49 @@ plot_coefCC(blup2, do_map["2"])
 # add a legend
 legend("bottomleft", names(CCcolors), col=CCcolors, lwd=2, ncol=2,
        bg="gray90")
+
+## snp associations in region
+# first find the position
+marker <- rownames(max(out, DOex$gmap, chr="2"))
+peak_Mbp <- DOex$pmap[["2"]][marker]
+
+# download SNPs for the region
+url <- "http://rqtl.org/c2_snpinfo.rds"
+file <- basename(url)
+download.file(url, file)
+snpinfo <- readRDS(file)
+
+# each row is a SNP; columns 5-12 have founder genotypes as 1/3
+head(snpinfo)
+
+# first calculate "strain distribution pattern" encoding
+snpinfo$sdp <- calc_sdp(snpinfo[,-(1:4)])
+head(snpinfo)
+
+# create index for the SNPs
+snpinfo <- index_snps(DOex$pmap, snpinfo)
+head(snpinfo)
+
+# convert allele dosages to SNP allele dosages
+snp_pr <- genoprob_to_snpprob(apr, snpinfo)
+
+# calculate LOD scores at each distinct SNP
+out_snp <- scan1(snp_pr, DOex$pheno[,1], k[["2"]], sex)
+
+# plot the results
+plot(out_snp, snpinfo)
+
+# plot just indexed SNPs
+plot(out_snp, snpinfo, show_all_snps=FALSE)
+
+# plot all SNPs; highlight the ones within 1.5 LOD of top
+plot(out_snp, snpinfo, drop.hilit=1.5)
+
+# top SNP
+top_snps(out_snp, snpinfo, drop=0, show_all_snps=FALSE)
+
+# top SNP + equivalent ones
+top_snps(out_snp, snpinfo, drop=0)
+
+# indexed SNPs within 1.5 of top
+top_snps(out_snp, snpinfo, show_all_snps=FALSE)
