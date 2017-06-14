@@ -63,6 +63,7 @@ demonstration.
 - In demonstrating R/qtl2, we'll follow the
   [User guide](http://kbroman.org/qtl2/assets/vignettes/user_guide.html).
   My basic script is [`Scripts/rqtl2_workshop.R`](Scripts/rqtl2_workshop.R).
+  Here's the version I actually typed at the workshop: [`Scripts/rqtl2_workshop_live.R`](Scripts/rqtl2_workshop_live.R).
 
 ---
 
